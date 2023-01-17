@@ -42,10 +42,10 @@ class _HomeScreenState extends State<HomeScreen> {
                       weatherDataHourly:
                           globalController.getWeatherData().getHourlyWeather(),
                     ),
-                    // DailyDataForecast(
-                    //   weatherDataDaily:
-                    //       globalController.getWeatherData().getDailyWeather(),
-                    // ),
+                    DailyDataForecast(
+                      weatherDataDaily:
+                          globalController.getWeatherData().getDailyWeather(),
+                    ),
                   ],
                 ),
               )),

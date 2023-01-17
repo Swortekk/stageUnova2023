@@ -1,4 +1,4 @@
-#Mon Jan 16 16:53:09 CET 2023
-base.0=C\:\\Users\\jules\\Documents\\stage_unova2023\\weather_app\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+#Tue Jan 17 10:54:57 CET 2023
+base.0=C\:\\Users\\jules\\Documents\\stage_unova2023\\weather_application\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

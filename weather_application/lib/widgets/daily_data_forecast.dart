@@ -9,8 +9,24 @@ class DailyDataForecast extends StatelessWidget {
 
   String getDay(final day) {
     DateTime time = DateTime.fromMillisecondsSinceEpoch(day * 1000);
+
     final x = DateFormat('EEE').format(time);
+
     return x;
+  }
+
+  String toFrench(String? jour, String? mois) {
+    String dayTranslate = "";
+    var jours = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+    var joursFr = ['Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam', 'Dim'];
+
+    for (int i = 0; i < jours.length; i++) {
+      if (jours[i] == jour) {
+        jours[i] = joursFr[i];
+        dayTranslate = joursFr[i];
+      }
+    }
+    return dayTranslate;
   }
 
   @override
@@ -59,12 +75,20 @@ class DailyDataForecast extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     Text(
-                      getDay(weatherDataDaily.daily[index].dt),
+                      toFrench(getDay(weatherDataDaily.daily[index].dt), null),
                       style: const TextStyle(
                         color: CustomColors.textColorBlack,
                         fontSize: 13,
                       ),
                     ),
+                    SizedBox(
+                      height: 30,
+                      width: 30,
+                      child: Image.asset(
+                          "assets/weather/${weatherDataDaily.daily[index].weather![0].icon}.png"),
+                    ),
+                    Text("${weatherDataDaily.daily[index].temp!.min}" +
+                        "° / ${weatherDataDaily.daily[index].temp!.max}°")
                   ],
                 ),
               ),

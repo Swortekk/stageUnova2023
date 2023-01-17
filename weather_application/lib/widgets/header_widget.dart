@@ -13,6 +13,44 @@ class HeaderWidget extends StatefulWidget {
   State<HeaderWidget> createState() => _HeaderWidgetState();
 }
 
+String monthtoFrench(String mois) {
+  String monthTranslate = "";
+  var month = [
+    'January',
+    'Februrary',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December'
+  ];
+  var monthFR = [
+    'Janvier',
+    'Février',
+    'Mars',
+    'Avril',
+    'Mai',
+    'Juin',
+    'Juillet',
+    'Août',
+    'Septembre',
+    'Octobre',
+    'Novembre',
+    'Décembre'
+  ];
+  for (int i = 0; i < month.length; i++) {
+    if (mois.contains(month[i])) {
+      monthTranslate = mois.replaceAll(month[i], monthFR[i]);
+    }
+  }
+  return monthTranslate;
+}
+
 class _HeaderWidgetState extends State<HeaderWidget> {
   String city = "";
   String date = DateFormat("yMMMMd").format(DateTime.now());
@@ -53,7 +91,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
           margin: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
           alignment: Alignment.topLeft,
           child: Text(
-            date,
+            monthtoFrench(date),
             style: const TextStyle(
               fontSize: 14,
               color: Colors.grey,

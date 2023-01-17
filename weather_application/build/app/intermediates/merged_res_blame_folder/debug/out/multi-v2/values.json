@@ -1,8 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\jules\\Documents\\stage_unova2023\\weather_app\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\Users\\jules\\Documents\\stage_unova2023\\weather_application\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
+                {
+                    "source": "C:\\Users\\jules\\Documents\\stage_unova2023\\weather_application\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "3,14",
+                        "startColumns": "4,4",
+                        "startOffsets": "176,832",
+                        "endLines": "7,16",
+                        "endColumns": "12,12",
+                        "endOffsets": "483,998"
+                    },
+                    "to": {
+                        "startLines": "121,126",
+                        "startColumns": "4,4",
+                        "startOffsets": "8627,8935",
+                        "endLines": "125,128",
+                        "endColumns": "12,12",
+                        "endOffsets": "8930,9099"
+                    }
+                },
                 {
                     "source": "C:\\Users\\jules\\.gradle\\caches\\transforms-3\\3ff720be07735976176520d1c05fb799\\transformed\\jetified-play-services-base-18.0.1\\res\\values\\values.xml",
                     "from": {
@@ -37,25 +56,6 @@
                         "startOffsets": "6085,7263",
                         "endColumns": "67,166",
                         "endOffsets": "6148,7425"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\jules\\Documents\\stage_unova2023\\weather_app\\android\\app\\src\\main\\res\\values\\styles.xml",
-                    "from": {
-                        "startLines": "3,14",
-                        "startColumns": "4,4",
-                        "startOffsets": "176,832",
-                        "endLines": "7,16",
-                        "endColumns": "12,12",
-                        "endOffsets": "483,998"
-                    },
-                    "to": {
-                        "startLines": "121,126",
-                        "startColumns": "4,4",
-                        "startOffsets": "8627,8935",
-                        "endLines": "125,128",
-                        "endColumns": "12,12",
-                        "endOffsets": "8930,9099"
                     }
                 },
                 {

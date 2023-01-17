@@ -63,8 +63,6 @@ class GlobalController extends GetxController {
       _latitude.value = value.latitude;
       _longitude.value = value.longitude;
       //calling weather API
-      print(value.latitude);
-      print(value.longitude);
       return FetchWeatherApi()
           .processData(value.latitude, value.longitude)
           .then((value) {
