@@ -31,7 +31,8 @@ class _HomePageState extends State<HomePage> {
       currentSunrise = sunriseSunsetTimes.sunrise;
       currentSunset = sunriseSunsetTimes.sunset;
       place = placemarks[0];
-      city = "${place!.locality}, ${place!.postalCode}, ${place!.country}";
+      city =
+          "${place!.street}, ${place!.postalCode}, ${place!.locality}, ${place!.country}";
     });
   }
 
@@ -45,9 +46,9 @@ class _HomePageState extends State<HomePage> {
           children: [
             Text("Vous êtes à $city "),
             Text(
-                "Lever de soleil : ${currentSunrise.toString().substring(11, 16)}"),
+                "Le soleil se lève à ${currentSunrise.toString().substring(11, 16)}"),
             Text(
-                "Coucher de soleil : ${currentSunset.toString().substring(11, 16)}"),
+                "Le soleil se couche à ${currentSunset.toString().substring(11, 16)}"),
           ],
         ),
       ),
